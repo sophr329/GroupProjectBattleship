@@ -10,57 +10,84 @@
 
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="321dp"
-        android:layout_height="511dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="363dp"
+        android:layout_height="609dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        app:columnCount="8"
+        app:columnCount="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:rowCount="8">
+        app:layout_constraintVertical_bias="0.224"
+        app:rowCount="7">
 
-        <Button
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey" />
+
+        <ImageButton
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button4"
-            android:layout_width="104dp"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button5"
-            android:layout_width="117dp"
-            android:layout_height="69dp"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey"
             app:layout_column="4"
-            app:layout_row="1" />
+            app:layout_row="0" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button6"
-            android:layout_width="68dp"
-            android:layout_height="33dp"
-            android:text="Button"
-            app:layout_column="0"
-            app:layout_row="1" />
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:src="@drawable/grey"
+            app:layout_column="6"
+            app:layout_row="0" />
+
+
     </androidx.gridlayout.widget.GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
