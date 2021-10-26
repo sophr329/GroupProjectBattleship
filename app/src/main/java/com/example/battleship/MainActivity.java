@@ -10,9 +10,9 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton buttonID;
-//    imageID; /
-//    private Boolean ship;
-//    private Boolean hitStatus;
+    ImageButton buttonIDtest;
+    Boolean ship;
+    Boolean hitStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,23 +20,35 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         buttonID = (ImageButton) findViewById(R.id.button00);
-        buttonID.setOnClickListener(imgB);
+        buttonID.setOnClickListener(imgA);
+
+        buttonIDtest = (ImageButton) findViewById(R.id.button01);
+        buttonIDtest.setOnClickListener(imgB);
     }
 
-    View.OnClickListener imgB = new View.OnClickListener() {
+    View.OnClickListener imgA = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             buttonID.setImageResource(R.drawable.x);
         }
     };
 
+    View.OnClickListener imgB = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            buttonIDtest.setImageResource(R.drawable.check);
+        }
+    };
+
+
 
 //    public void changeImage(boolean hitStatus){
 //        if(hitStatus && ship){
-//            imageID = "check.png";
+//
+//
 //        }
 //        else if(hitStatus){
-//            imageID = "x.png";
+//
 //        }
 //}
 

@@ -30,6 +30,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
         <ImageButton
@@ -38,6 +40,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
         <ImageButton
@@ -46,6 +50,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
         <ImageButton
@@ -54,6 +60,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
         <ImageButton
@@ -62,6 +70,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
             app:layout_row="0" />
@@ -72,6 +82,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
             app:layout_row="0" />
@@ -82,6 +94,8 @@
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="6"
             app:layout_row="0" />
