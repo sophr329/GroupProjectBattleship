@@ -100,6 +100,84 @@
             app:layout_column="6"
             app:layout_row="0" />
 
+        //
+
+        <ImageButton
+            android:id="@+id/button10"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey" />
+
+        <ImageButton
+            android:id="@+id/button11"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey" />
+
+        <ImageButton
+            android:id="@+id/button12"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey" />
+
+        <ImageButton
+            android:id="@+id/button13"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey" />
+
+        <ImageButton
+            android:id="@+id/button14"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/button15"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <ImageButton
+            android:id="@+id/button16"
+            android:layout_width="@dimen/ImageButtonSize"
+            android:layout_height="@dimen/ImageButtonSize"
+            android:layout_margin="@dimen/ImageButtonMargin"
+            android:gravity="fill"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey"
+            app:layout_column="6"
+            app:layout_row="1" />
+
 
     </androidx.gridlayout.widget.GridLayout>
 
