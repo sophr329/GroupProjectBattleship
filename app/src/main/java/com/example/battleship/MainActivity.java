@@ -51,7 +51,7 @@ public class MainActivity<i> extends AppCompatActivity {
 //            buttonIDtest.setImageResource(R.drawable.check);
 //        }
 //    }
-    
+
     public void changeImage(boolean hitStatus, boolean ship){
         if(hitStatus && ship){
 
