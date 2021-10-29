@@ -11,10 +11,19 @@ public class MainActivity<i> extends AppCompatActivity {
 
 //    ImageButton buttonID;
 //    ImageButton buttonIDtest;
-    Boolean ship;
-    Boolean hitStatus;
-
+      Boolean ship;
+      Boolean hitStatus;
+      String buttID;
+      ImageButton imgButton;
     private ImageButton [][] spacesArray;
+    private Boolean [][] shipArray;
+
+    public MainActivity(View v){
+        buttID = " ";
+        ship = false;
+        hitStatus = false;
+        imgButton = (ImageButton) findViewById(v.getId());
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +33,27 @@ public class MainActivity<i> extends AppCompatActivity {
         spacesArray =  new ImageButton[8][8];
         for (int x = 0; x < 8; x++) {
             for (int k = 0; k < 8; k++) {
-                String buttID = "button" + x + k;
+                buttID = "button" + x + k;
                 int id = getResources().getIdentifier(buttID, "id", getPackageName());
                 spacesArray[x][k] = findViewById(id);
 
             }
         }
 
-//        buttonID = (ImageButton) findViewById(R.id.button00);
+        shipArray = new Boolean[8][8];
+            shipArray[1][0] = true;
+            shipArray[1][1] = true;
+
+}
+        public void checkSpace(ImageButton imgButton){
+            if(spacesArray.get)
+
+        }
+
+
+
+
+        //        buttonID = (ImageButton) findViewById(R.id.button00);
 //        buttonID.setOnClickListener(imgA);
 //
 //        buttonIDtest = (ImageButton) findViewById(R.id.button01);
@@ -51,15 +73,3 @@ public class MainActivity<i> extends AppCompatActivity {
 //            buttonIDtest.setImageResource(R.drawable.check);
 //        }
 //    }
-
-    public void changeImage(boolean hitStatus, boolean ship){
-        if(hitStatus && ship){
-
-
-        }
-        else if(hitStatus){
-
-        }
-}
-
-}
