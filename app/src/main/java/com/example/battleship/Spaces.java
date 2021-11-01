@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class MainActivity<i> extends AppCompatActivity {
+public class Spaces<i> extends AppCompatActivity {
 
 //    ImageButton buttonID;
 //    ImageButton buttonIDtest;
@@ -15,10 +15,10 @@ public class MainActivity<i> extends AppCompatActivity {
       Boolean hitStatus;
       String buttID;
       ImageButton imgButton;
-    private ImageButton [][] spacesArray;
+    private Spaces [] spacesArray;
     private Boolean [][] shipArray;
 
-    public MainActivity(View v){
+    public Spaces(View v){
         buttID = " ";
         ship = false;
         hitStatus = false;
@@ -30,26 +30,13 @@ public class MainActivity<i> extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        spacesArray =  new ImageButton[8][8];
-        for (int x = 0; x < 8; x++) {
-            for (int k = 0; k < 8; k++) {
-                buttID = "button" + x + k;
-                int id = getResources().getIdentifier(buttID, "id", getPackageName());
-                spacesArray[x][k] = findViewById(id);
-
-            }
+        spacesArray =  new Spaces[50];
+        for(int i = 0; i < 50; i++){
+            spacesArray[i] = new Spaces();
         }
 
-        shipArray = new Boolean[8][8];
-            shipArray[1][0] = true;
-            shipArray[1][1] = true;
 
 }
-        public void checkSpace(ImageButton imgButton){
-            if(spacesArray.get)
-
-        }
-
 
 
 
