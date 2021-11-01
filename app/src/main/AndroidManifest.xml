@@ -13,7 +13,7 @@
             android:name=".ButtonAdapter"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SpacesActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
