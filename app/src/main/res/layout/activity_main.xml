@@ -26,18 +26,19 @@
 
         <ImageButton
             android:id="@+id/button00"
-            android:contentDescription="button01"
             android:layout_width="@dimen/ImageButtonSize"
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="checkSpaces"
             android:gravity="fill"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
         <ImageButton
             android:id="@+id/button01"
-            android:contentDescription="button01"
+            android:contentDescription="@string/app_name"
             android:layout_width="@dimen/ImageButtonSize"
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"

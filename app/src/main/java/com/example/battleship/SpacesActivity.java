@@ -1,9 +1,7 @@
 package com.example.battleship;
 
 import static java.lang.Integer.parseInt;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -12,12 +10,13 @@ import android.widget.ImageButton;
 public class SpacesActivity extends AppCompatActivity {
 
     private Spaces[][] spacesArray;
+    int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        i = 0;
         spacesArray =  new Spaces[7][7];
 
         for(int i = 0; i < spacesArray.length; i++) {
@@ -42,7 +41,7 @@ public class SpacesActivity extends AppCompatActivity {
         ImageButton img = findViewById(v.getId());
         String imgStr = img.getContentDescription().toString();
 
-        int index = parseInt(imgStr.substring(6));
+         i = parseInt(imgStr.substring(6));
 
     }
 
