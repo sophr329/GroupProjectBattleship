@@ -12,8 +12,8 @@ public class Spaces {
     ImageButton imgButton;
 
 
-    public Spaces(){
-        buttID = " ";
+    public Spaces(String id){
+        buttID = id;
         ship = false;
         hitStatus = false;
         imgButton = null;
