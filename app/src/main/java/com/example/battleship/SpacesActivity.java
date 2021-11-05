@@ -7,18 +7,13 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+
 
 public class SpacesActivity extends AppCompatActivity {
 
     private Spaces[][] spacesArray;
-
-
-    private View.OnClickListener buttonOnClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            checkSpaces(v);
-        }
-    };
+    private boolean[] shipsArray;
 
 
     @Override
@@ -32,13 +27,7 @@ public class SpacesActivity extends AppCompatActivity {
             for (int j = 0; j < spacesArray[0].length; j++) {
                 String id = "" + i + j;
                 spacesArray[i][j] = new Spaces(id);
-                // you can' use v because there is no v in the onCreate
-                // need to figure out a way to programmatically access ALL ImageButtons in xml
 
-                // spacesArray[i][j].setImgButton(findViewById(v.getId()));
-
-                // I don't thinkyou need listener
-                //  spacesArray[i][j].getImgButton().setOnClickListener(buttonOnClickListener);
             }
         }
 
@@ -46,12 +35,8 @@ public class SpacesActivity extends AppCompatActivity {
 
     }
 
-    public void placeShips() {
-        shipArrange();
 
-    }
-
-    public void shipArrange(){
+    public void placeShips(){
         int min = 1;
         int max = 5;
         int rand = (int)Math.floor(Math.random()*(max-min+1)+min);
@@ -143,12 +128,17 @@ public class SpacesActivity extends AppCompatActivity {
             spacesArray[6][5].setShip(true);
         }
 
+        public void checkWin(){
+            ;
+        }
+
 
     }
 
     public void checkSpaces(View v) {
         ImageButton img = findViewById(v.getId());
         String imgStr = img.getContentDescription().toString();
+
 
         int row, col;
         row = parseInt(imgStr.substring(6, 7));
