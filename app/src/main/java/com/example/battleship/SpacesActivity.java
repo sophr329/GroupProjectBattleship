@@ -127,11 +127,9 @@ public class SpacesActivity extends AppCompatActivity {
             spacesArray[6][4].setShip(true);
             spacesArray[6][5].setShip(true);
         }
-
-        public void checkWin(){
-            ;
-        }
-
+//
+//        public void checkWin(){
+//
 
     }
 
