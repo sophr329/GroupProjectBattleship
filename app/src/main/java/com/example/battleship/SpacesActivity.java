@@ -14,6 +14,14 @@ public class SpacesActivity extends AppCompatActivity {
 
     private Spaces[][] spacesArray;
     private boolean[] shipsArray;
+    boolean sunk1;
+    boolean sunk2;
+    boolean sunk3;
+    boolean sunk4;
+
+    int min = 1;
+    int max = 5;
+    int rand = (int) Math.floor(Math.random() * (max - min + 1) + min);
 
 
     @Override
@@ -32,17 +40,14 @@ public class SpacesActivity extends AppCompatActivity {
         }
 
         placeShips();
-
     }
 
 
-    public void placeShips(){
-        int min = 1;
-        int max = 5;
-        int rand = (int)Math.floor(Math.random()*(max-min+1)+min);
+    public void placeShips() {
 
 
-        if(rand == 1){
+
+        if (rand == 1) {
             spacesArray[0][0].setShip(true);
             spacesArray[1][0].setShip(true);
             spacesArray[2][0].setShip(true);
@@ -58,8 +63,7 @@ public class SpacesActivity extends AppCompatActivity {
             spacesArray[2][5].setShip(true);
             spacesArray[3][5].setShip(true);
             spacesArray[4][5].setShip(true);
-        }
-        else if(rand == 2){
+        } else if (rand == 2) {
             spacesArray[0][1].setShip(true);
             spacesArray[0][2].setShip(true);
             spacesArray[0][3].setShip(true);
@@ -75,8 +79,7 @@ public class SpacesActivity extends AppCompatActivity {
             spacesArray[2][5].setShip(true);
             spacesArray[3][5].setShip(true);
             spacesArray[4][5].setShip(true);
-        }
-        else if(rand == 3){
+        } else if (rand == 3) {
             spacesArray[0][0].setShip(true);
             spacesArray[1][0].setShip(true);
 
@@ -92,25 +95,7 @@ public class SpacesActivity extends AppCompatActivity {
             spacesArray[4][6].setShip(true);
             spacesArray[5][6].setShip(true);
             spacesArray[6][6].setShip(true);
-        }
-        else if(rand == 4){
-            spacesArray[0][0].setShip(true);
-            spacesArray[1][0].setShip(true);
-
-            spacesArray[2][2].setShip(true);
-            spacesArray[2][3].setShip(true);
-            spacesArray[2][4].setShip(true);
-
-            spacesArray[6][0].setShip(true);
-            spacesArray[6][1].setShip(true);
-            spacesArray[6][2].setShip(true);
-
-            spacesArray[3][6].setShip(true);
-            spacesArray[4][6].setShip(true);
-            spacesArray[5][6].setShip(true);
-            spacesArray[6][6].setShip(true);
-        }
-        else{
+        } else if (rand == 4) {
             spacesArray[3][0].setShip(true);
             spacesArray[4][0].setShip(true);
             spacesArray[5][0].setShip(true);
@@ -126,10 +111,160 @@ public class SpacesActivity extends AppCompatActivity {
 
             spacesArray[6][4].setShip(true);
             spacesArray[6][5].setShip(true);
+        } else {
+            spacesArray[1][2].setShip(true);
+            spacesArray[1][3].setShip(true);
+            spacesArray[1][4].setShip(true);
+
+            spacesArray[6][3].setShip(true);
+            spacesArray[6][4].setShip(true);
+            spacesArray[6][5].setShip(true);
+
+            spacesArray[3][0].setShip(true);
+            spacesArray[4][0].setShip(true);
+            spacesArray[5][0].setShip(true);
+            spacesArray[6][0].setShip(true);
+
+            spacesArray[3][5].setShip(true);
+            spacesArray[3][6].setShip(true);
         }
-//
-//        public void checkWin(){
-//
+    }
+
+    public void checkSink(){
+
+        if(rand == 1){
+           if(spacesArray[0][0].isHitStatus() && spacesArray[1][0].isHitStatus()
+                   && spacesArray[2][0].isHitStatus() && !sunk1){
+               Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+              sunk1 = true;
+           }
+           else if(spacesArray[3][2].isHitStatus() && spacesArray[3][3].isHitStatus() && !sunk2){
+               Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               sunk2 = true;
+           }
+           else if(spacesArray[5][1].isHitStatus() && spacesArray[5][2].isHitStatus() &&
+                   spacesArray[5][3].isHitStatus() && !sunk3){
+               Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               sunk3 = true;
+           }
+           else if(spacesArray[1][5].isHitStatus() && spacesArray[2][5].isHitStatus() &&
+                   spacesArray[3][5].isHitStatus() && spacesArray[4][5].isHitStatus() && !sunk4){
+               Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               sunk4 = true;
+           }
+
+           if(sunk4 && sunk3 && sunk2 && sunk1){
+               //change page?
+               Toast.makeText(getApplicationContext(), "You Won!", Toast.LENGTH_LONG).show();
+           }
+
+
+        }
+        else if(rand == 2){
+            if( spacesArray[0][1].isHitStatus() && spacesArray[0][2].isHitStatus()
+            && spacesArray[0][3].isHitStatus() && spacesArray[0][4].isHitStatus()  && !sunk1){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk1 = true;
+            }
+            else if(spacesArray[3][0].isHitStatus() && spacesArray[4][0].isHitStatus() && !sunk2){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk2 = true;
+            }
+            else if(spacesArray[4][2].isHitStatus() && spacesArray[5][2].isHitStatus() &&
+            spacesArray[6][2].isHitStatus() && !sunk3){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk3 = true;
+            }
+            else if(spacesArray[2][5].isHitStatus() && spacesArray[3][5].isHitStatus() &&
+                    spacesArray[4][5].isHitStatus() &&  !sunk4){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk4 = true;
+            }
+
+            if(sunk4 && sunk3 && sunk2 && sunk1){
+                //change page?
+                Toast.makeText(getApplicationContext(), "You Won!", Toast.LENGTH_LONG).show();
+            }
+        }
+        else if(rand == 3){
+            if(spacesArray[0][0].isHitStatus() && spacesArray[1][0].isHitStatus() && !sunk1){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk1 = true;
+            }
+            else if(spacesArray[2][2].isHitStatus() && spacesArray[2][3].isHitStatus() &&
+            spacesArray[2][4].isHitStatus() &&!sunk2){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk2 = true;
+            }
+            else if(spacesArray[6][0].isHitStatus() && spacesArray[6][1].isHitStatus() &&
+            spacesArray[6][2].isHitStatus() && !sunk3){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk3 = true;
+            }
+            else if(spacesArray[3][6].isHitStatus() && spacesArray[4][6].isHitStatus() &&
+            spacesArray[5][6].isHitStatus() && spacesArray[6][6].isHitStatus() &&  !sunk4){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk4 = true;
+            }
+
+            if(sunk4 && sunk3 && sunk2 && sunk1){
+                //change page?
+                Toast.makeText(getApplicationContext(), "You Won!", Toast.LENGTH_LONG).show();
+            }
+        }
+        else if(rand == 4){
+            if(  spacesArray[3][0].isHitStatus() && spacesArray[4][0].isHitStatus() &&
+            spacesArray[5][0].isHitStatus() && !sunk1){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk1 = true;
+            }
+            else if(spacesArray[2][2].isHitStatus() && spacesArray[3][2].isHitStatus() &&
+                    spacesArray[4][2].isHitStatus() && !sunk2){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk2 = true;
+            }
+            else if( spacesArray[1][4].isHitStatus() && spacesArray[2][4].isHitStatus() &&
+            spacesArray[3][4].isHitStatus() && spacesArray[4][4].isHitStatus() && !sunk3){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk3 = true;
+            }
+            else if(spacesArray[6][4].isHitStatus() && spacesArray[6][5].isHitStatus() && !sunk4){
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk4 = true;
+            }
+
+            if(sunk4 && sunk3 && sunk2 && sunk1){
+                //change page?
+                Toast.makeText(getApplicationContext(), "You Won!", Toast.LENGTH_LONG).show();
+            }
+        }
+        else if(rand == 5) {
+            if (spacesArray[1][2].isHitStatus() && spacesArray[1][3].isHitStatus() &&
+                    spacesArray[1][4].isHitStatus() && !sunk1) {
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk1 = true;
+            }
+            else if (spacesArray[6][3].isHitStatus() && spacesArray[6][4].isHitStatus() &&
+                    spacesArray[6][5].isHitStatus() && !sunk2) {
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk2 = true;
+            }
+            else if (spacesArray[3][0].isHitStatus() && spacesArray[4][0].isHitStatus() &&
+                    spacesArray[5][0].isHitStatus() && spacesArray[6][0].isHitStatus() && !sunk3) {
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk3 = true;
+            }
+            else
+            if (spacesArray[3][5].isHitStatus() && spacesArray[3][6].isHitStatus() && !sunk4) {
+                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                sunk4 = true;
+            }
+
+            if (sunk4 && sunk3 && sunk2 && sunk1) {
+                //change page?
+                Toast.makeText(getApplicationContext(), "You Won!", Toast.LENGTH_LONG).show();
+            }
+        }
 
     }
 
@@ -157,6 +292,7 @@ public class SpacesActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "You already picked this square", Toast.LENGTH_SHORT).show();
         }
 
+        checkSink();
 
     }
 
