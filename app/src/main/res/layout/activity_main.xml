@@ -10,8 +10,9 @@
 
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="363dp"
-        android:layout_height="609dp"
+        android:id="@+id/gridLayout"
+        android:layout_width="366dp"
+        android:layout_height="434dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
@@ -21,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224"
+        app:layout_constraintVertical_bias="0.0"
         app:rowCount="7">
 
         <ImageButton
@@ -122,8 +123,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button10"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -134,8 +135,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button11"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -146,8 +147,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button12"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -158,8 +159,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button13"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -170,8 +171,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button14"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
@@ -184,8 +185,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button15"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
@@ -198,8 +199,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button16"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="6"
@@ -213,8 +214,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button20"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -225,8 +226,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button21"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -237,8 +238,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button22"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -249,8 +250,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button23"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -261,8 +262,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button24"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
@@ -275,8 +276,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button25"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
@@ -289,8 +290,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button26"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="6"
@@ -304,8 +305,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button30"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -314,10 +315,10 @@
             android:layout_width="@dimen/ImageButtonSize"
             android:layout_height="@dimen/ImageButtonSize"
             android:layout_margin="@dimen/ImageButtonMargin"
-            android:onClick="checkSpaces"
             android:adjustViewBounds="true"
             android:contentDescription="button31"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -328,8 +329,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button32"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -340,8 +341,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button33"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -352,8 +353,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button34"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
@@ -366,8 +367,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button35"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
@@ -380,8 +381,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button36"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="6"
@@ -395,8 +396,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button40"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="0"
@@ -409,8 +410,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button41"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -421,8 +422,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button42"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -433,8 +434,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button43"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -445,8 +446,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button44"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
@@ -459,8 +460,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button45"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
@@ -473,8 +474,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button46"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="6"
@@ -488,8 +489,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button50"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -500,8 +501,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button51"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -512,8 +513,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button52"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -524,8 +525,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button53"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -536,8 +537,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button54"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
@@ -550,8 +551,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button55"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
@@ -579,8 +580,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button60"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -591,8 +592,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button61"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -603,8 +604,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button62"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -615,8 +616,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button63"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey" />
 
@@ -627,8 +628,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button64"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="4"
@@ -641,8 +642,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button65"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="5"
@@ -655,8 +656,8 @@
             android:layout_margin="@dimen/ImageButtonMargin"
             android:adjustViewBounds="true"
             android:contentDescription="button66"
-            android:onClick="checkSpaces"
             android:gravity="fill"
+            android:onClick="checkSpaces"
             android:scaleType="fitXY"
             android:src="@drawable/grey"
             app:layout_column="6"
@@ -664,6 +665,22 @@
 
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/newButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="reset"
+        android:text="New Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

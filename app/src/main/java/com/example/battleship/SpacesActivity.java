@@ -296,6 +296,25 @@ public class SpacesActivity extends AppCompatActivity {
 
     }
 
+    public void reset(View v) {
+
+        spacesArray = new Spaces[7][7];
+
+        for (int i = 0; i < spacesArray.length; i++) {
+            for (int j = 0; j < spacesArray[0].length; j++) {
+                String id = "" + i + j;
+                spacesArray[i][j] = new Spaces(id);
+                spacesArray[i][j].setShip(false);
+                spacesArray[i][j].setHitStatus(false);
+//                spacesArray[i][j].setImgButton(null);
+//                spacesArray[i][j].setButtID(null);
+                spacesArray[i][j].getImgButton().setImageResource(R.drawable.grey);
+            }
+        }
+
+        placeShips();
+    }
+
 
 }
 
