@@ -4,6 +4,7 @@ import static java.lang.Integer.parseInt;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -23,11 +24,13 @@ public class SpacesActivity extends AppCompatActivity {
     int max = 5;
     int rand = (int) Math.floor(Math.random() * (max - min + 1) + min);
 
+    GridLayout myGrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myGrid = findViewById(R.id.gridLayout);
 
         spacesArray = new Spaces[7][7];
 
@@ -295,8 +298,12 @@ public class SpacesActivity extends AppCompatActivity {
         checkSink();
 
     }
-
+    //https://www.dev2qa.com/android-gridlayout-example-programmatically/
+    //https://www.tabnine.com/code/java/methods/android.view.View/findViewById
     public void reset(View v) {
+
+        int childCount = myGrid.getChildCount();
+        spacesArray = new Spaces[7][7];
 
         for (int i = 0; i < spacesArray.length; i++) {
             for (int j = 0; j < spacesArray[0].length; j++) {
@@ -304,12 +311,26 @@ public class SpacesActivity extends AppCompatActivity {
                 spacesArray[i][j] = new Spaces(id);
                 spacesArray[i][j].setShip(false);
                 spacesArray[i][j].setHitStatus(false);
-                //spacesArray[i][j].setImgButton();
+                
                 //spacesArray[i][j].getImgButton().setImageResource(R.drawable.grey); //debug says null so what do i setImageButton to?
             }
         }
 
+        for (int i = 0; i < childCount; i++) {
+            Object child = myGrid.getChildAt(i);
+            if(child instanceof ImageButton){
+                ImageButton img = (ImageButton)child;
+                img.setImageResource(R.drawable.grey);
+            }
+        }
+
+
+
+
+
+
         //placeShips();
+
     }
 
 
