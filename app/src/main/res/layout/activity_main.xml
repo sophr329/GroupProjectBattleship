@@ -9,10 +9,37 @@
     tools:context=".SpacesActivity">
 
 
+    <TextView
+        android:id="@+id/square2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:text="2 squares"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ship2" />
+
+    <TextView
+        android:id="@+id/square31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:text="3 squares"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ship31" />
+
+    <TextView
+        android:id="@+id/square32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:text="3 squares"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ship32" />
+
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="366dp"
-        android:layout_height="434dp"
+        android:layout_width="363dp"
+        android:layout_height="363dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
@@ -20,6 +47,7 @@
         app:columnCount="7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -673,14 +701,69 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="3dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
         android:onClick="reset"
         android:text="New Game"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ship4"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:srcCompat="@drawable/ship4" />
+
+    <ImageView
+        android:id="@+id/ship31"
+        android:layout_width="126dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/ship4"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:srcCompat="@drawable/ship31" />
+
+    <ImageView
+        android:id="@+id/ship32"
+        android:layout_width="137dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ship4"
+        app:srcCompat="@drawable/ship32" />
+
+    <ImageView
+        android:id="@+id/ship2"
+        android:layout_width="119dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ship32"
+        app:layout_constraintTop_toBottomOf="@+id/ship31"
+        app:srcCompat="@drawable/ship2" />
+
+    <TextView
+        android:id="@+id/square4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:text="4 squares"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ship4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
