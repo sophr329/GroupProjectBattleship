@@ -10,8 +10,11 @@ import android.util.Log;
 import android.view.View;
 import androidx.gridlayout.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
+
+import org.w3c.dom.Text;
 
 
 public class SpacesActivity extends AppCompatActivity {
@@ -182,20 +185,28 @@ public class SpacesActivity extends AppCompatActivity {
            if(spacesArray[0][0].isHitStatus() && spacesArray[1][0].isHitStatus()
                    && spacesArray[2][0].isHitStatus() && !sunk1){
                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               TextView tv31 = (TextView)findViewById(R.id.square31);
+               tv31.setText("sunk!");
               sunk1 = true;
            }
            else if(spacesArray[3][2].isHitStatus() && spacesArray[3][3].isHitStatus() && !sunk2){
                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               TextView tv2 = (TextView)findViewById(R.id.square2);
+               tv2.setText("sunk!");
                sunk2 = true;
            }
            else if(spacesArray[5][1].isHitStatus() && spacesArray[5][2].isHitStatus() &&
                    spacesArray[5][3].isHitStatus() && !sunk3){
                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               TextView tv32 = (TextView)findViewById(R.id.square32);
+               tv32.setText("sunk!");
                sunk3 = true;
            }
            else if(spacesArray[1][5].isHitStatus() && spacesArray[2][5].isHitStatus() &&
                    spacesArray[3][5].isHitStatus() && spacesArray[4][5].isHitStatus() && !sunk4){
                Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+               TextView tv4 = (TextView)findViewById(R.id.square4);
+               tv4.setText("sunk!");
                sunk4 = true;
            }
 
@@ -211,19 +222,27 @@ public class SpacesActivity extends AppCompatActivity {
             && spacesArray[0][3].isHitStatus() && spacesArray[0][4].isHitStatus()  && !sunk1){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
                 sunk1 = true;
+                TextView tv4 = (TextView)findViewById(R.id.square4);
+                tv4.setText("sunk!");
             }
             else if(spacesArray[3][0].isHitStatus() && spacesArray[4][0].isHitStatus() && !sunk2){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv2 = (TextView)findViewById(R.id.square2);
+                tv2.setText("sunk!");
                 sunk2 = true;
             }
             else if(spacesArray[4][2].isHitStatus() && spacesArray[5][2].isHitStatus() &&
             spacesArray[6][2].isHitStatus() && !sunk3){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv31 = (TextView)findViewById(R.id.square31);
+                tv31.setText("sunk!");
                 sunk3 = true;
             }
             else if(spacesArray[2][5].isHitStatus() && spacesArray[3][5].isHitStatus() &&
                     spacesArray[4][5].isHitStatus() &&  !sunk4){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv32 = (TextView)findViewById(R.id.square32);
+                tv32.setText("sunk!");
                 sunk4 = true;
             }
 
@@ -235,22 +254,30 @@ public class SpacesActivity extends AppCompatActivity {
         else if(rand == 3){
             if(spacesArray[0][0].isHitStatus() && spacesArray[1][0].isHitStatus() && !sunk1){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv2 = (TextView)findViewById(R.id.square2);
+                tv2.setText("sunk!");
                 sunk1 = true;
             }
             else if(spacesArray[2][2].isHitStatus() && spacesArray[2][3].isHitStatus() &&
             spacesArray[2][4].isHitStatus() &&!sunk2){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv31 = (TextView)findViewById(R.id.square31);
+                tv31.setText("sunk!");
                 sunk2 = true;
             }
             else if(spacesArray[6][0].isHitStatus() && spacesArray[6][1].isHitStatus() &&
             spacesArray[6][2].isHitStatus() && !sunk3){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv32 = (TextView)findViewById(R.id.square32);
+                tv32.setText("sunk!");
                 sunk3 = true;
             }
             else if(spacesArray[3][6].isHitStatus() && spacesArray[4][6].isHitStatus() &&
             spacesArray[5][6].isHitStatus() && spacesArray[6][6].isHitStatus() &&  !sunk4){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
                 sunk4 = true;
+                TextView tv4 = (TextView)findViewById(R.id.square4);
+                tv4.setText("sunk!");
             }
 
             if(sunk4 && sunk3 && sunk2 && sunk1){
@@ -262,20 +289,28 @@ public class SpacesActivity extends AppCompatActivity {
             if(  spacesArray[3][0].isHitStatus() && spacesArray[4][0].isHitStatus() &&
             spacesArray[5][0].isHitStatus() && !sunk1){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv31 = (TextView)findViewById(R.id.square31);
+                tv31.setText("sunk!");
                 sunk1 = true;
             }
             else if(spacesArray[2][2].isHitStatus() && spacesArray[3][2].isHitStatus() &&
                     spacesArray[4][2].isHitStatus() && !sunk2){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv32 = (TextView)findViewById(R.id.square32);
+                tv32.setText("sunk!");
                 sunk2 = true;
             }
             else if( spacesArray[1][4].isHitStatus() && spacesArray[2][4].isHitStatus() &&
             spacesArray[3][4].isHitStatus() && spacesArray[4][4].isHitStatus() && !sunk3){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv4 = (TextView)findViewById(R.id.square4);
+                tv4.setText("sunk!");
                 sunk3 = true;
             }
             else if(spacesArray[6][4].isHitStatus() && spacesArray[6][5].isHitStatus() && !sunk4){
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv2 = (TextView)findViewById(R.id.square2);
+                tv2.setText("sunk!");
                 sunk4 = true;
             }
 
@@ -288,22 +323,30 @@ public class SpacesActivity extends AppCompatActivity {
             if (spacesArray[1][2].isHitStatus() && spacesArray[1][3].isHitStatus() &&
                     spacesArray[1][4].isHitStatus() && !sunk1) {
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv32 = (TextView)findViewById(R.id.square32);
+                tv32.setText("sunk!");
                 sunk1 = true;
             }
             else if (spacesArray[6][3].isHitStatus() && spacesArray[6][4].isHitStatus() &&
                     spacesArray[6][5].isHitStatus() && !sunk2) {
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv31 = (TextView)findViewById(R.id.square31);
+                tv31.setText("sunk!");
                 sunk2 = true;
             }
             else if (spacesArray[3][0].isHitStatus() && spacesArray[4][0].isHitStatus() &&
                     spacesArray[5][0].isHitStatus() && spacesArray[6][0].isHitStatus() && !sunk3) {
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv4 = (TextView)findViewById(R.id.square4);
+                tv4.setText("sunk!");
                 sunk3 = true;
             }
-            else
-            if (spacesArray[3][5].isHitStatus() && spacesArray[3][6].isHitStatus() && !sunk4) {
+            else if (spacesArray[3][5].isHitStatus() && spacesArray[3][6].isHitStatus() && !sunk4) {
                 Toast.makeText(getApplicationContext(), "You sunk a battleship!!", Toast.LENGTH_SHORT).show();
+                TextView tv2 = (TextView)findViewById(R.id.square2);
+                tv2.setText("sunk!");
                 sunk4 = true;
+
             }
 
             if (sunk4 && sunk3 && sunk2 && sunk1) {
@@ -357,6 +400,20 @@ public class SpacesActivity extends AppCompatActivity {
                 spacesArray[i][j].setHitStatus(false);
             }
         }
+
+        sunk1 = false;
+        sunk2 = false;
+        sunk3 = false;
+        sunk4 = false;
+
+        TextView tv4 = (TextView)findViewById(R.id.square4);
+        tv4.setText("4 squares");
+        TextView tv32 = (TextView)findViewById(R.id.square32);
+        tv32.setText("3 squares");
+        TextView tv31 = (TextView)findViewById(R.id.square31);
+        tv31.setText("3 squares");
+        TextView tv2 = (TextView)findViewById(R.id.square2);
+        tv2.setText("2 squares");
 
         for (int i = 0; i < childCount; i++) {
             Object child = myGrid.getChildAt(i);
